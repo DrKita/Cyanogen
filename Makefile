@@ -383,11 +383,6 @@ KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -Wno-format-security \
 		   -fno-delete-null-pointer-checks \
 		   -fdiagnostics-show-option -Werror \
-$(call cc-disable-warning,error=unused-variable,)\
-$(call cc-disable-warning,error=unused-const-variable,)\
-$(call cc-disable-warning,error=misleading-indentation,)\
-$(call cc-disable-warning,error=shift-overflow,)\
-$(call cc-disable-warning,error=tautological-compare,)
 		   -std=gnu89
 
 KBUILD_AFLAGS_KERNEL :=
